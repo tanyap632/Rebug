@@ -434,7 +434,6 @@ a {
 .supports--items .items--btn {
     padding: 52px 0 0 46px;
     box-sizing: border-box;
-
 }
 
 .supports--items .items--btn:nth-child(2) {
@@ -451,23 +450,6 @@ a {
 
 .supports--items .items--btn_hover-2:hover {
     background-image: url(../media/icons/organizers/dumahmaoy.svg);
-}
-
-.supports--items .items--btn_hover-1:hover,
-.supports--items .items--btn_hover-2:hover {
-    color: transparent;
-    /* Скрыть текст */
-    text-shadow: none;
-    /* На всякий случай, если есть тень у текста */
-    transition: color 0.3s;
-}
-
-.supports--items .items--btn_hover-1,
-.supports--items .items--btn_hover-2 {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s, color 0.3s;
 }
 
 /* contacts */
