@@ -398,6 +398,10 @@ a {
     background-position: center;
 }
 
+.items--btn_hover-1,.items--btn_hover-2,.items--btn_hover-3,.items--btn_hover-4,.items--btn_hover-5,.items--btn_hover-6,.items--btn_hover-7 {
+    background-color: transparent;
+}
+
 .items--btn_hover-1:hover {
     background-image: url(../media/icons/organizers/sovrnhmao.svg);
 }
