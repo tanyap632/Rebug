@@ -434,8 +434,14 @@ a {
 .supports--items .items--btn {
     padding: 52px 0 0 46px;
     box-sizing: border-box;
+    /* общий стиль по желанию */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: color 0.2s;
 }
 
+/* override paddings для второго и третьего элемента */
 .supports--items .items--btn:nth-child(2) {
     padding: 52px 0 0 40px;
 }
@@ -444,12 +450,18 @@ a {
     padding: 52px 0 0 135px;
 }
 
-.supports--items .items--btn_hover-1:hover {
+/* --- Самое главное: картинки прописаны всегда (не только :hover)! --- */
+.items--btn_hover-1 {
     background-image: url(../media/icons/organizers/grantguber.svg);
 }
 
-.supports--items .items--btn_hover-2:hover {
+.items--btn_hover-2 {
     background-image: url(../media/icons/organizers/dumahmaoy.svg);
+}
+
+/* На hover только скрываем текст цветом (можно добавить эффект, если нужен) */
+.items--btn_hover:hover {
+    color: transparent;
 }
 
 /* contacts */
