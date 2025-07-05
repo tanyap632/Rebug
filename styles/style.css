@@ -354,6 +354,10 @@ a {
     width: 375px;
     height: 126px;
     font-size: 20px;
+
+}
+
+.items--btn_hover {
     font-family: 'Roboto';
     font-weight: 500;
     border-radius: 30px;
@@ -444,7 +448,7 @@ a {
     padding: 52px 0 0 135px;
 }
 
-.supports--items .items--btn_hover-1{
+.supports--items .items--btn_hover-1 {
     background-image: url(../media/icons/organizers/grantguber.svg);
     opacity: 0;
 }
@@ -453,6 +457,7 @@ a {
     background-image: url(../media/icons/organizers/dumahmaoy.svg);
     opacity: 0;
 }
+
 .supports--items .items--btn_hover-1:hover {
     opacity: 1;
 }
