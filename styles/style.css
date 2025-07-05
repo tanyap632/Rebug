@@ -444,12 +444,21 @@ a {
     padding: 52px 0 0 135px;
 }
 
-.supports--items .items--btn_hover-1:hover {
+.supports--items .items--btn_hover-1{
     background-image: url(../media/icons/organizers/grantguber.svg);
+    opacity: 0;
+}
+
+.supports--items .items--btn_hover-2 {
+    background-image: url(../media/icons/organizers/dumahmaoy.svg);
+    opacity: 0;
+}
+.supports--items .items--btn_hover-1:hover {
+    opacity: 1;
 }
 
 .supports--items .items--btn_hover-2:hover {
-    background-image: url(../media/icons/organizers/dumahmaoy.svg);
+    opacity: 1;
 }
 
 /* contacts */
