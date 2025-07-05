@@ -392,80 +392,38 @@ a {
     padding: 40px 0 0 74px;
 }
 
-.items--btn_hover {
+.items--btn_hover:hover {
     background-repeat: no-repeat;
     color: transparent;
     background-position: center;
 }
 
-.items--btn_hover-1 {
-    background-image: url(../media/icons/organizers/sovrnhmao.svg);
-    opacity: 0;
-}
-
-.items--btn_hover-2 {
-    background-image: url(../media/icons/organizers/sozvezdie.svg);
-    opacity: 0;
-}
-
-.items--btn_hover-3 {
-    background-image: url(../media/icons/organizers/RMHU.svg);
-    opacity: 0;
-}
-
-.items--btn_hover-4 {
-    background-image: url(../media/icons/organizers/sovinet.svg);
-    opacity: 0;
-}
-
-.items--btn_hover-5 {
-    background-image: url(../media/icons/organizers/together.svg);
-    opacity: 0;
-}
-
-.items--btn_hover-6 {
-    background-image: url(../media/icons/organizers/TIGR.svg);
-    opacity: 0;
-}
-
-.items--btn_hover-7 {
-    background-image: url(../media/icons/organizers/reconstruction.svg);
-    opacity: 0;
-}
-
 .items--btn_hover-1:hover {
     background-image: url(../media/icons/organizers/sovrnhmao.svg);
-    opacity: 1;
 }
 
 .items--btn_hover-2:hover {
     background-image: url(../media/icons/organizers/sozvezdie.svg);
-    opacity: 1;
 }
 
 .items--btn_hover-3:hover {
     background-image: url(../media/icons/organizers/RMHU.svg);
-    opacity: 1;
 }
 
 .items--btn_hover-4:hover {
     background-image: url(../media/icons/organizers/sovinet.svg);
-    opacity: 1;
 }
 
 .items--btn_hover-5:hover {
     background-image: url(../media/icons/organizers/together.svg);
-    opacity: 1;
 }
 
 .items--btn_hover-6:hover {
     background-image: url(../media/icons/organizers/TIGR.svg);
-    opacity: 1;
 }
 
 .items--btn_hover-7:hover {
     background-image: url(../media/icons/organizers/reconstruction.svg);
-    opacity: 1;
 }
 
 /* supports */
@@ -476,6 +434,7 @@ a {
 .supports--items .items--btn {
     padding: 52px 0 0 46px;
     box-sizing: border-box;
+
 }
 
 .supports--items .items--btn:nth-child(2) {
@@ -492,6 +451,23 @@ a {
 
 .supports--items .items--btn_hover-2:hover {
     background-image: url(../media/icons/organizers/dumahmaoy.svg);
+}
+
+.supports--items .items--btn_hover-1:hover,
+.supports--items .items--btn_hover-2:hover {
+    color: transparent;
+    /* Скрыть текст */
+    text-shadow: none;
+    /* На всякий случай, если есть тень у текста */
+    transition: color 0.3s;
+}
+
+.supports--items .items--btn_hover-1,
+.supports--items .items--btn_hover-2 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s, color 0.3s;
 }
 
 /* contacts */
