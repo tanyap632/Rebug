@@ -349,6 +349,50 @@ a {
     gap: 60px;
 }
 
+.preload-icon {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.preload1 {
+    background-image: url(../media/icons/organizers/sovrnhmao.svg);
+}
+
+.preload2 {
+    background-image: url(../media/icons/organizers/sozvezdie.svg);
+}
+
+.preload3 {
+    background-image: url(../media/icons/organizers/RMHU.svg);
+}
+
+.preload4 {
+    background-image: url(../media/icons/organizers/sovinet.svg);
+}
+
+.preload5 {
+    background-image: url(../media/icons/organizers/together.svg);
+}
+
+.preload6 {
+    background-image: url(../media/icons/organizers/TIGR.svg);
+}
+
+.preload7 {
+    background-image: url(../media/icons/organizers/reconstruction.svg);
+}
+
+.preload8 {
+    background-image: url(../media/icons/organizers/grantguber.svg);
+}
+
+.preload9 {
+    background-image: url(../media/icons/organizers/dumahmaoy.svg);
+}
+
 .items--btn {
     display: block;
     width: 375px;
