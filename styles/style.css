@@ -392,10 +392,6 @@ a {
     padding: 40px 0 0 74px;
 }
 
-.items--btn_hover {
-    background-image: none;
-}
-
 .items--btn_hover:hover {
     background-repeat: no-repeat;
     color: transparent;
