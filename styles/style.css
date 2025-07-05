@@ -349,15 +349,13 @@ a {
     gap: 60px;
 }
 
-.items--btn {
+.items--btn {}
+
+.items--btn a {
     display: block;
     width: 375px;
     height: 126px;
     font-size: 20px;
-
-}
-
-.items--btn_hover {
     font-family: 'Roboto';
     font-weight: 500;
     border-radius: 30px;
