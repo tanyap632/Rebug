@@ -455,6 +455,7 @@ a {
 /* contacts */
 .contacts {
     margin-top: 200px;
+    max-width: 1680px;
     box-sizing: border-box;
     padding: 120px 130px 96px 77px;
     background-color: #000;
@@ -706,7 +707,8 @@ a {
     }
 
     .wrapper_mobile {
-        margin: 0;
+        margin: 0 auto;
+        max-width: 390px;
     }
 
     .slider {
@@ -848,10 +850,10 @@ a {
     }
 
     .contacts {
-        margin: 80px auto 0;
+        margin-top: 80px;
+        width: 100%;
         padding: 100px 0 70px 30px;
         border-radius: 50px;
-        max-width: 390px
     }
 
     .contacts h2 {
@@ -901,3 +903,9 @@ a {
         line-height: 15px;
     }
 }
+@media (max-width:390px){
+  .wrapper_mobile {
+        max-width: 100vw;
+    }
+}
+    
