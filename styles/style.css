@@ -706,8 +706,7 @@ a {
     }
 
     .wrapper_mobile {
-        margin: 0 auto;
-        width: 390px;
+        margin: 0;
     }
 
     .slider {
@@ -849,9 +848,10 @@ a {
     }
 
     .contacts {
-        margin-top: 80px;
+        margin: 80px auto 0;
         padding: 100px 0 70px 30px;
         border-radius: 50px;
+        max-width: 390px
     }
 
     .contacts h2 {
