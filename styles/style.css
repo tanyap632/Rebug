@@ -723,6 +723,7 @@ a {
         width: 100%;
         min-width: 0;
         max-width: 100vw;
+        text-align: center;
         overflow: visible;
     }
 
@@ -761,11 +762,6 @@ a {
         min-width: 0;
         max-width: 100%;
     }
-    .slider {
-        width: 390px;
-        text-align: center;
-        overflow: visible;
-    }
 
     .slides--content:first-child {
         border-radius: 50px 50px 0 0;
@@ -775,27 +771,27 @@ a {
         border-radius: 0 0 50px 50px;
     }
 
-    .slides--content {
+/*     .slides--content {
         padding: 38px 20px 32px;
         border-radius: 0;
-    }
+    } */
 
-    .slides--content img {
+/*     .slides--content img {
         width: 350px;
         height: 239px;
-    }
+    } */
 
-    .slides--content h3 {
+/*     .slides--content h3 {
         font-size: 24px;
     }
-
-    .slides--content button {
+ */
+/*     .slides--content button {
         border-radius: 50px;
         margin: 40px 0;
         width: 332px;
         height: 73px;
         font-size: 16px;
-    }
+    } */
 
     .slider--slides {
         flex-direction: column;
