@@ -852,7 +852,7 @@ a {
     .contacts {
         margin-top: 80px;
         width: 100%;
-        padding: 100px 0 70px 30px;
+        padding: 100px 30px 70px;
         border-radius: 50px;
     }
 
@@ -866,8 +866,8 @@ a {
     }
 
     .contacts--map {
-        width: 329px;
-        height: 213px;
+        width: 100%;
+        height: auto;
         margin-top: 50px;
     }
 
