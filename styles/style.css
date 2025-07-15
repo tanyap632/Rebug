@@ -720,6 +720,48 @@ a {
         min-width: 0;
     }
     .slider {
+        width: 100%;
+        min-width: 0;
+        max-width: 100vw;
+        overflow: visible;
+    }
+
+    .slides--content {
+        padding: 20px 10px;
+    }
+    .slides--content img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        min-width: 0;
+        margin-bottom: 30px;
+        border-radius: 30px;
+    }
+    .slides--content h3 {
+        font-size: 18px;
+        width: 100%;
+    }
+    .slides--content button {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin: 20px 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .slides--content div {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        font-size: 14px;
+        padding: 14px 14px 0 14px;
+    }
+    .slides--content div p {
+        width: 100% !important;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .slider {
         width: 390px;
         text-align: center;
         overflow: visible;
