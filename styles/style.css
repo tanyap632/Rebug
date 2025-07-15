@@ -710,7 +710,15 @@ a {
         margin: 0 auto;
         max-width: 390px;
     }
-
+ .slider,
+    .slides--content,
+    .slides--content img,
+    .slides--content button,
+    .slides--content div {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
     .slider {
         width: 390px;
         text-align: center;
