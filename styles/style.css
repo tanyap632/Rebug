@@ -1158,9 +1158,9 @@ a {
 
     .slides--content div {
         font-size: 14px;
-        padding: 10px 14px 0 14px;
+        padding: 40px 41px 20px;
         width: 100%;
-        max-width: 330px;
+        height: auto;
         margin: 0 auto;
         line-height: 18px;
         text-align: start;
