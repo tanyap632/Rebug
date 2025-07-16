@@ -597,10 +597,10 @@ a {
         transform: translateX(-50%); */
     }
 
-    /* 
+    
     body {
-        padding-top: 129px;
-    } */
+        overflow: hidden;
+    } 
 
     .header--nav {
         display: none;
