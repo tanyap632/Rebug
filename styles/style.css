@@ -351,6 +351,8 @@ a {
 
 .items--btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 375px;
     height: 126px;
     font-size: 20px;
@@ -845,42 +847,33 @@ a {
     .items--btn {
         width: 330px;
         font-size: 16px;
-        padding: 51px 0 0 29px;
         line-height: 19px;
     }
 
     .items--btn:nth-child(2) {
-        padding: 32px 0 0 38px;
+        padding-right: 38px;
     }
 
     .items--btn:nth-child(3) {
-        padding: 32px 0 0 19px
+        padding-right: 19px;
     }
 
 
     .items--btn:nth-child(5) {
-        padding: 42px 0 0 57px;
+        padding-right: 57px;
     }
 
     .items--btn:nth-child(6) {
-        padding: 42px 0 0 65px;
+        padding-right: 65px;
     }
 
     .items--btn:nth-child(7) {
-        padding: 42px 0 0 74px;
+        padding-right: 74px;
     }
 
     /* supports */
-    .supports--items .items--btn {
-        padding: 52px 0 0 49px;
-    }
-
-    .supports--items .items--btn:nth-child(2) {
-        padding: 52px 0 0 45px;
-    }
-
     .supports--items .items--btn:nth-child(3) {
-        padding: 51px 0 0 120px;
+        padding: 0;
     }
 
     /* contacts */
@@ -1188,45 +1181,25 @@ a {
         width: 100%;
         font-size: 16px;
         line-height: 19px;
-        padding: 50px 0 0 55px;
     }
 
     .items--btn:nth-child(2) {
-        padding: 33px 0 0 35px;
+        padding-right: 35px;
     }
 
     .items--btn:nth-child(3) {
-        padding: 30px 25px 0 26px;
-    }
-
-    .items--btn:nth-child(4) {
-        padding: 50px 0 0 75px;
+        padding: 0 25px 0 26px;
     }
 
     .items--btn:nth-child(5) {
-        padding: 45px 0 0 25px;
+        padding-right: 25px;
     }
 
-    .items--btn:nth-child(6) {
-        padding: 45px 0 0 45px;
-    }
-
+    .items--btn:nth-child(6),
     .items--btn:nth-child(7) {
-        padding: 45px 0 0 45px;
+        padding-right: 45px;
     }
 
-    /* supports */
-    .supports--items .items--btn {
-        padding: 52px 0 0 70px;
-    }
-
-    .supports--items .items--btn:nth-child(2) {
-        padding: 52px 0 0 65px;
-    }
-
-    .supports--items .items--btn:nth-child(3) {
-        padding: 52px 0 0 145px;
-    }
 
     /* contacts */
     .contacts {
