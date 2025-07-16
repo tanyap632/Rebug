@@ -997,7 +997,10 @@ a {
         display: none;
     }
 
-    .header--nav_mobile.menu-open,
+    .header--nav_mobile.menu-open {
+        display: block;
+    }
+
     .header--mobile_open {
         display: block;
         background: #fff;
@@ -1023,7 +1026,7 @@ a {
 
     .first-block--text a {
         width: 100%;
-        padding: 16px 0;
+        padding: 25px 0;
         font-size: 15px;
         text-align: center;
         display: block;
@@ -1038,8 +1041,8 @@ a {
 
     .first-block::after {
         top: 0;
-        margin-top: -200px;
-        height: 600px;
+        margin-top: -270px;
+        height: 700px;
     }
 
     .first-block {
@@ -1225,48 +1228,56 @@ a {
     .contacts {
         margin-top: 50px;
         width: 100%;
-    padding: 50px 12px 40px;
-    border-radius: 28px;
-  }
-  .contacts h2 {
-    line-height: 36px;
-    font-size: 32px;
-  }
-  .contacts--block {
-    margin-top: 50px;
-    flex-direction: column;
-  }
-  .contacts--map {
-    width: 100%;
-    height: auto;
-    margin-top: 28px;
-  }
-  .contacts--text p,
-  .contacts--text a {
-    font-size: 15px;
-    margin-top: 20px;
-  }
-  .contacts--text h3 {
-    font-size: 20px;
-    margin: 36px 0 24px;
-  }
-  .contacts--text img {
-    width: 18px;
-  }
+        padding: 50px 12px 40px;
+        border-radius: 28px;
+    }
 
-  /* footer */
-  .footer {
-    padding: 24px 0px;
-    gap: 20px;
-    align-items: start;
-  }
-  .footer a img {
-    width: 30px;
-    height: 30px;
-  }
-  .footer--copy {
-    width: 180px;
-    font-size: 12px;
-    line-height: 14px;
-  }
+    .contacts h2 {
+        line-height: 36px;
+        font-size: 32px;
+    }
+
+    .contacts--block {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .contacts--map {
+        width: 100%;
+        height: auto;
+        margin-top: 28px;
+    }
+
+    .contacts--text p,
+    .contacts--text a {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .contacts--text h3 {
+        font-size: 20px;
+        margin: 36px 0 24px;
+    }
+
+    .contacts--text img {
+        width: 18px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 24px 0px;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .footer a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer--copy {
+        width: 180px;
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
