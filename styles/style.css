@@ -1230,15 +1230,15 @@ a {
 
     /* supports */
     .supports--items .items--btn {
-        padding: 24px 0 0 23px;
+        padding: 52px 0 0 70px;
     }
 
     .supports--items .items--btn:nth-child(2) {
-        padding: 24px 0 0 19px;
+        padding: 52px 0 0 65px;
     }
 
     .supports--items .items--btn:nth-child(3) {
-        padding: 28px 0 0 58px;
+        padding: 52px 0 0 145px;
     }
 
     /* contacts */
