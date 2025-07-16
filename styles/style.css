@@ -743,6 +743,7 @@ a {
         height: auto;
         margin-bottom: 30px;
         border-radius: 30px;
+        width: 350px;
     }
 
     .slides--content h3 {
@@ -778,11 +779,6 @@ a {
     .slides--content {
         padding: 38px 20px 32px;
         border-radius: 0;
-    }
-
-    .slides--content img {
-        width: 350px;
-        height: 239px;
     }
 
     .slides--content h3 {
@@ -1124,10 +1120,14 @@ a {
         overflow: visible;
     }
 
+    .slides--content {
+        padding: 60px 40px 45px;
+    }
+
     .slides--content img {
         height: auto;
         margin-bottom: 20px;
-        border-radius: 20px;
+        border-radius: 36px;
         width: 100%;
         max-width: 360px;
         object-fit: cover;
