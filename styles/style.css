@@ -597,10 +597,6 @@ a {
         transform: translateX(-50%); */
     }
 
-    
-    body {
-        overflow: hidden;
-    } 
 
     .header--nav {
         display: none;
