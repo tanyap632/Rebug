@@ -1121,6 +1121,7 @@ a {
 
     .slides--content {
         padding: 60px 40px 45px;
+        border-radius: 0;
     }
 
     .slides--content:first-child {
