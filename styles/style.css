@@ -1199,29 +1199,33 @@ a {
 
     .items--btn {
         width: 100%;
-        font-size: 15px;
-        padding: 28px 0 0 15px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 50px 0 0 55px;
     }
 
     .items--btn:nth-child(2) {
-        padding: 18px 0 0 20px;
+        padding: 33px 0 0 35px;
     }
 
     .items--btn:nth-child(3) {
-        padding: 18px 0 0 10px;
+        padding: 30px 25px 0 26px;
+    }
+
+    .items--btn:nth-child(4) {
+        padding: 50px 0 0 75px;
     }
 
     .items--btn:nth-child(5) {
-        padding: 20px 0 0 30px;
+        padding: 45px 0 0 25px;
     }
 
     .items--btn:nth-child(6) {
-        padding: 20px 0 0 36px;
+        padding: 45px 0 0 45px;
     }
 
     .items--btn:nth-child(7) {
-        padding: 20px 0 0 42px;
+        padding: 45px 0 0 45px;
     }
 
     /* supports */
