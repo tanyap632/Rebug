@@ -366,7 +366,7 @@ a {
 }
 
 .items--btn:nth-child(2) {
-    padding-right: 26px;
+    padding-left: 26px;
 }
 
 .items--btn:nth-child(3) {
@@ -375,15 +375,15 @@ a {
 
 
 .items--btn:nth-child(5) {
-    padding-right: 47px;
+    padding-left: 47px;
 }
 
 .items--btn:nth-child(6) {
-    padding-right: 63px;
+    padding-left: 63px;
 }
 
 .items--btn:nth-child(7) {
-    padding-right: 74px;
+    padding-left: 74px;
 }
 
 .items--btn_hover:hover {
@@ -851,24 +851,24 @@ a {
     }
 
     .items--btn:nth-child(2) {
-        padding-right: 38px;
+        padding-left: 38px;
     }
 
     .items--btn:nth-child(3) {
-        padding-right: 19px;
+        padding-left: 19px;
     }
 
 
     .items--btn:nth-child(5) {
-        padding-right: 57px;
+        padding-left: 57px;
     }
 
     .items--btn:nth-child(6) {
-        padding-right: 65px;
+        padding-left: 65px;
     }
 
     .items--btn:nth-child(7) {
-        padding-right: 74px;
+        padding-left: 74px;
     }
 
     /* supports */
@@ -1184,7 +1184,7 @@ a {
     }
 
     .items--btn:nth-child(2) {
-        padding-right: 35px;
+        padding-left: 35px;
     }
 
     .items--btn:nth-child(3) {
@@ -1192,12 +1192,12 @@ a {
     }
 
     .items--btn:nth-child(5) {
-        padding-right: 25px;
+        padding-left: 25px;
     }
 
     .items--btn:nth-child(6),
     .items--btn:nth-child(7) {
-        padding-right: 45px;
+        padding-left: 45px;
     }
 
 
