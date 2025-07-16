@@ -950,7 +950,7 @@ body{
 }
 @media (max-width:330px){
   .body {
-       overflow:visible;
+       overflow-x:visible;
     }
 }
     
