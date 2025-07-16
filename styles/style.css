@@ -1263,323 +1263,258 @@ a {
     /* общее */
     h1,
     h2 {
-        font-size: 32px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p,
-    a {
-        font-size: 15px;
-    }
-
-    body {
-        overflow-x: hidden
+        font-size: 36px;
+        line-height: 46px;
     }
 
     .wrapper {
-        max-width: 400px;
+        max-width: 970px;
+        padding: 0 20px;
     }
 
     /* header */
     .header {
-        justify-content: space-between;
-        width: 100vw;
-        z-index: 999;
-        background: #fff;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .header--nav,
-    .header--nav_mobile {
-        display: none;
+    .header--nav ul {
+        gap: 32px;
+        margin-left: 0;
+        margin-top: 20px;
     }
 
-    .header--nav_mobile.menu-open {
-        display: block;
-    }
-
-    .header--mobile_open {
-        display: block;
-        background: #fff;
-    }
-
-    .header--logo {
-        width: 120px;
-        height: 60px;
+    .header--nav ul li a {
+        font-size: 16px;
     }
 
     /* first-block */
+    .first-block {
+        height: 420px;
+        margin-top: 60px;
+    }
+
     .first-block--text {
         width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
     }
 
     .first-block--text h1 {
         width: 100%;
-        line-height: 42px;
-        font-size: 32px;
-    }
-
-    .first-block--text a {
-        width: 100%;
-        padding: 25px 0;
-        font-size: 15px;
-        text-align: center;
-        display: block;
-        box-sizing: border-box;
+        line-height: 46px;
     }
 
     .first-block--text p {
-        padding: 32px 0 48px;
+        width: 370px;
         font-size: 18px;
-        width: 100%;
+        line-height: 24px;
+        padding: 32px 0;
     }
 
-    .first-block::after {
-        top: 0;
-        margin-top: -270px;
-        height: 700px;
-    }
-
-    .first-block {
-        height: 350px;
+    .first-block--text a {
+        font-size: 16px;
+        width: 220px;
+        padding: 14px 40px;
+        height: 48px;
     }
 
     .first-block img {
-        display: none;
+        max-width: 280px;
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+    }
+
+    .first-block::after {
+        height: 100vw;
     }
 
     /* about */
     .about {
-        margin-top: 160px;
+        margin-top: 60px;
+        height: auto;
         flex-direction: column;
-        height: max-content;
+        gap: 28px;
+        align-items: flex-start;
     }
 
     .about p {
         width: 100%;
-        font-size: 15px;
-        margin-top: 32px;
-        line-height: 18px;
+        font-size: 18px;
     }
 
     .about--button {
-        margin-top: 24px;
-        font-size: 15px;
-        float: none;
-        justify-content: normal;
+        margin-top: 32px;
+        font-size: 16px;
     }
 
-    .about--button img {
-        padding-left: 8px;
+    .about--button_back,
+    .about--button_open {
+        width: auto;
+    }
+
+    .pistol {
+        top: 900px;
+        max-width: 150px;
     }
 
     /* programs */
-    .pistol,
-    .pistol-2 {
-        display: none;
+    .programs {
+        margin-top: 48px;
     }
 
     .programs--text {
-        flex-direction: column-reverse;
-        margin-bottom: 50px;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+        margin-bottom: 60px;
     }
 
     .programs--text p {
         width: 100%;
-        font-size: 15px;
-        line-height: 18px;
-        margin-top: 32px;
+        font-size: 18px;
+        margin-top: 0;
     }
 
     .programs--text h2 {
         width: 100%;
-        line-height: 36px;
-        font-size: 32px;
-    }
-
-    .wrapper_mobile {
-        margin: 0 auto;
-        max-width: 450px;
+        line-height: 1.2;
     }
 
     /* slider */
-    .slider,
-    .slides--content,
-    .slides--content img,
-    .slides--content button,
-    .slides--content div {
+    .slider {
         width: 100%;
-        max-width: 100%;
         min-width: 0;
     }
 
-    .slider {
-        max-width: 100vw;
-        text-align: center;
-        overflow: visible;
+    .slider--slides {
+        gap: 24px;
     }
 
     .slides--content {
-        padding: 60px 40px 45px;
-        border-radius: 0;
-    }
-
-    .slides--content:first-child {
-        border-radius: 50px 50px 0 0;
-    }
-
-    .slides--content:nth-child(5) {
-        border-radius: 0 0 50px 50px;
+        padding: 40px 20px 32px;
+        border-radius: 30px;
+        min-width: 280px;
+        max-width: 340px;
     }
 
     .slides--content img {
-        height: auto;
-        margin-bottom: 20px;
-        border-radius: 36px;
-        width: 100%;
-        max-width: 360px;
-        object-fit: cover;
+        width: 200px;
+        margin-bottom: 32px;
+        border-radius: 25px;
     }
 
     .slides--content h3 {
         font-size: 20px;
-        width: 100%;
     }
 
-    .slides--content button {
-        margin: 40px 0;
+    .slides--content button,
+    .slides--content div {
+        width: 180px;
         font-size: 14px;
-        box-sizing: border-box;
-        border-radius: 40px;
-        width: 100%;
-        max-width: 300px;
-        height: 60px;
+        padding: 10px;
+        margin: 16px auto;
     }
 
     .slides--content div {
-        font-size: 14px;
-        padding: 40px;
-        width: 100%;
         height: auto;
-        margin: 0 auto;
-        line-height: 18px;
-        text-align: start;
+        gap: 16px;
+        line-height: 1.2;
+        padding: 16px 12px 0;
     }
 
     .slides--content div p:nth-child(2),
-    .slides--content:nth-child(4) div p:nth-child(3) {
-        width: auto;
-    }
-
-    .slider--slides {
-        flex-direction: column;
-        gap: 0;
+    .slides--content div p:nth-child(3) {
+        width: 100%;
     }
 
     .slider--buttons {
-        display: none;
+        width: auto;
+        gap: 18px;
+        margin: 20px auto 0;
     }
 
-    /* organizers */
-    .organizers {
-        margin-top: 50px;
+    /* organizers & supports */
+    .pistol-2 {
+        position: static;
+        max-width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .organizers,
+    .supports {
+        margin-top: 60px;
+    }
+
+    .organizers--first {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
     }
 
     .organizers--items,
     .supports--items {
-        margin-top: 36px;
+        margin-top: 32px;
         width: 100%;
-        max-width: 390px;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        gap: 24px;
-        margin-left: auto;
-        margin-right: auto;
+        gap: 28px;
     }
 
     .items--btn {
-        width: 100%;
-        font-size: 16px;
-        line-height: 19px;
+        width: 160px;
+        height: 52px;
+        border-radius: 16px;
+        font-size: 14px;
     }
 
-    .items--btn:nth-child(2) {
-        padding-left: 35px;
+    /* убираем внутренние paddings для всех */
+    .items--btn:nth-child(n) {
+        padding: 0;
     }
-
-    .items--btn:nth-child(3) {
-        padding: 0 25px 0 26px;
-    }
-
-    .items--btn:nth-child(5) {
-        padding-left: 25px;
-    }
-
-    .items--btn:nth-child(6),
-    .items--btn:nth-child(7) {
-        padding-left: 45px;
-    }
-
 
     /* contacts */
     .contacts {
-        margin-top: 50px;
-        width: 100%;
-        padding: 50px;
-        border-radius: 28px;
-    }
-
-    .contacts h2 {
-        line-height: 36px;
-        font-size: 32px;
+        margin-top: 60px;
+        max-width: 100%;
+        padding: 48px 16px 32px;
+        border-radius: 32px;
     }
 
     .contacts--block {
-        margin-top: 50px;
+        margin-top: 40px;
         flex-direction: column;
+        gap: 24px;
     }
 
     .contacts--map {
         width: 100%;
-        height: auto;
-        margin-top: 28px;
+        min-width: 0;
+        height: 260px;
+        margin-bottom: 28px;
     }
 
     .contacts--text p,
     .contacts--text a {
         font-size: 16px;
-        margin-top: 40px;
+        margin-top: 12px;
     }
 
     .contacts--text h3 {
-        font-size: 20px;
-        margin: 50px 0 40px;
-    }
-
-    .contacts--text img {
-        width: 18px;
+        font-size: 28px;
+        margin: 36px 0 20px;
     }
 
     /* footer */
     .footer {
-        padding: 24px 0px;
-        gap: 20px;
-        align-items: start;
-        justify-content: space-between;
-    }
-
-    .footer a img {
-        width: 30px;
-        height: 30px;
+        padding: 44px 0 24px;
+        gap: 50px;
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .footer--copy {
-        width: 180px;
-        font-size: 12px;
-        line-height: 14px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
     }
 }
