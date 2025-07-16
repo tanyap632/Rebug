@@ -1202,7 +1202,7 @@ a {
     .contacts {
         margin-top: 50px;
         width: 100%;
-        padding: 50px 40px;
+        padding: 50px;
         border-radius: 28px;
     }
 
@@ -1242,6 +1242,7 @@ a {
         padding: 24px 0px;
         gap: 20px;
         align-items: start;
+        justify-content: space-between;
     }
 
     .footer a img {
