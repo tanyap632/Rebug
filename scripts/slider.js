@@ -18,9 +18,9 @@ function updateDots() {
 // Эта функция показывает слайд по индексу
 function showSlide(index) {
   if (index < 0) {
-    currentSlide = images.length - 1;
+    currentSlide = images.length - 1; // Переход на последний слайд
   } else if (index >= images.length) {
-    currentSlide = 0;
+    currentSlide = 0; // Переход на первый слайд
   } else {
     currentSlide = index;
   }
