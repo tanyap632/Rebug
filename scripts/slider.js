@@ -6,7 +6,6 @@ const slideWidth = images[0].offsetWidth;
 let currentSlide = 0;
 let startX = 0;
 let isSwiping = false;
-const swipeThreshold = 50;
 
 function updateDots() {
   dots.forEach((dot, index) => {
