@@ -223,8 +223,9 @@ a {
 .slider {
     position: relative;
     overflow: hidden;
-    width: 1791px;
-    margin: 0 0 0 auto;
+    max-width: 1898px;
+    width: 100%;
+    margin: 0 98px 0 -120px;
 }
 
 .slider--slides {
