@@ -1,6 +1,7 @@
 const slides = document.querySelector('.slider--slides');
 const images = document.querySelectorAll('.slides--content'); // убедитесь, что так называются ваши слайды
 const dots = document.querySelectorAll('.slider--buttons .slider--button'); // исправляем селектор
+const slideWidth = images[0].offsetWidth;
 
 let currentSlide = 0; // текущий слайд
 
@@ -28,7 +29,7 @@ function showSlide(index) {
 
 
   // Передвигаем контейнер слайдов
-  slides.style.transform = `translateX(-${currentSlide * 500}px)`;
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 
   // Обновляем точки
   updateDots();
@@ -43,3 +44,28 @@ dots.forEach((dot, index) => {
 
 // Изначально активируем первую точку
 updateDots();
+
+// --- ФУНКЦИЯ СВАЙПА ---
+slides.addEventListener('touchstart', function (event) {
+  if (event.touches.length === 1) {
+    startX = event.touches[0].clientX;
+    isSwiping = true;
+  }
+});
+
+
+slides.addEventListener('touchend', function (event) {
+  if (!isSwiping) return;
+  const endX = (event.changedTouches && event.changedTouches[0].clientX) || 0;
+  const deltaX = endX - startX;
+  if (Math.abs(deltaX) > swipeThreshold) {
+    if (deltaX < 0) {
+      // свайп влево
+      showSlide(currentSlide + 1);
+    } else {
+      // свайп вправо
+      showSlide(currentSlide - 1);
+    }
+  }
+  isSwiping = false;
+});
