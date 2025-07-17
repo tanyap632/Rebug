@@ -4,6 +4,9 @@ const dots = document.querySelectorAll('.slider--buttons .slider--button'); // �
 const slideWidth = images[0].offsetWidth;
 
 let currentSlide = 0; // текущий слайд
+let startX = 0;
+let isSwiping = false;
+const swipeThreshold = 50;
 
 // Эта функция обновляет активную точку
 function updateDots() {
@@ -44,7 +47,7 @@ dots.forEach((dot, index) => {
 
 // Изначально активируем первую точку
 updateDots();
-
+showSlide(currentSlide);
 // --- ФУНКЦИЯ СВАЙПА ---
 slides.addEventListener('touchstart', function (event) {
   if (event.touches.length === 1) {
