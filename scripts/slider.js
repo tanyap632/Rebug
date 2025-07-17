@@ -49,15 +49,17 @@ slides.addEventListener('touchstart', function (event) {
   }
 });
 
-slides.addEventListener('touchend', function (event) {
+slides.addEventListener('touchend', e => {
   if (!isSwiping) return;
-  const endX = (event.changedTouches && event.changedTouches[0].clientX) || 0;
+  const endX = (e.changedTouches && e.changedTouches[0].clientX) || 0;
   const deltaX = endX - startX;
   if (Math.abs(deltaX) > swipeThreshold) {
     if (deltaX < 0) {
-      showSlide(currentSlide + 1);
-    } else {
-      showSlide(currentSlide - 1);
+      // свайп "вперед" (направо)
+      showSlide((currentSlide + 1) % offsets.length);
+    } else if (deltaX > 0) {
+      // свайп "назад" (налево)
+      showSlide((currentSlide - 1 + offsets.length) % offsets.length);
     }
   }
   isSwiping = false;
