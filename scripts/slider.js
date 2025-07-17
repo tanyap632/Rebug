@@ -41,24 +41,48 @@ dots.forEach((dot, index) => {
 // Изначально активируем первую точку
 updateDots();
 showSlide(currentSlide);
-// --- ФУНКЦИЯ СВАЙПА ---
-slides.addEventListener('touchstart', function (event) {
-  if (event.touches.length === 1) {
-    startX = event.touches[0].clientX;
-    isSwiping = true;
+// Ловим свайпы только на планшете
+function enableSwipeOnTablet() {
+  // Проверяем ширину экрана
+  if(window.innerWidth >= 768 && window.innerWidth <= 1023) {
+    slides.addEventListener('touchstart', handleTouchStart);
+    slides.addEventListener('touchmove', handleTouchMove);
+    slides.addEventListener('touchend', handleTouchEnd);
+  } else {
+    slides.removeEventListener('touchstart', handleTouchStart);
+    slides.removeEventListener('touchmove', handleTouchMove);
+    slides.removeEventListener('touchend', handleTouchEnd);
   }
-});
+}
 
-slides.addEventListener('touchend', function (event) {
+// Обработка начала свайпа
+function handleTouchStart(e) {
+  startX = e.touches[0].clientX;
+  isSwiping = true;
+}
+
+// Пока двигаем палец
+function handleTouchMove(e) {
   if (!isSwiping) return;
-  const endX = (event.changedTouches && event.changedTouches[0].clientX) || 0;
-  const deltaX = endX - startX;
-  if (Math.abs(deltaX) > swipeThreshold) {
-    if (deltaX < 0) {
+  // Можно добавить анимацию слайда при свайпе, если нужно
+}
+
+// Заканчиваем свайп
+function handleTouchEnd(e) {
+  if (!isSwiping) return;
+  const endX = e.changedTouches[0].clientX;
+  const diffX = endX - startX;
+  if(Math.abs(diffX) > 50) { // Порог для свайпа, можно регулировать
+    if(diffX < 0) { // свайп влево
       showSlide(currentSlide + 1);
-    } else {
+    } else { // свайп вправо
       showSlide(currentSlide - 1);
     }
   }
   isSwiping = false;
-});
+}
+
+// Следим за изменением размера окна
+window.addEventListener('resize', enableSwipeOnTablet);
+// Инициализируем при загрузке
+document.addEventListener('DOMContentLoaded', enableSwipeOnTablet);
