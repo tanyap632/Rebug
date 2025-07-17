@@ -27,7 +27,7 @@ function showSlide(index) {
 
 
   // Передвигаем контейнер слайдов
-  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  slides.style.transform = `translateX(-${currentSlide * 500}px)`;
 
   // Обновляем точки
   updateDots();
