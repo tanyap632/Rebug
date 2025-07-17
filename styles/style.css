@@ -1272,5 +1272,117 @@ a {
         padding: 0 20px;
     }
 
+    /* slider */
+    .slider,
+    .slides--content,
+    .slides--content img,
+    .slides--content button,
+    .slides--content div {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
 
+    .slider {
+        max-width: 100vw;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .slides--content img {
+        height: 239px;
+        margin-bottom: 30px;
+        width: 350px;
+    }
+
+    .slides--content h3 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .slides--content button {
+        margin: 20px 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .slides--content div {
+        font-size: 14px;
+        padding: 14px 14px 0 14px;
+    }
+
+    .slides--content div p {
+        width: 100% !important;
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .slides--content:first-child {
+        border-radius: 50px 50px 0 0;
+    }
+
+    .slides--content:nth-child(5) {
+        border-radius: 0 0 50px 50px;
+    }
+
+    .slides--content {
+        padding: 38px 20px 32px;
+        border-radius: 0;
+    }
+
+    .slides--content h3 {
+        font-size: 24px;
+    }
+
+    .slides--content button {
+        border-radius: 50px;
+        margin: 40px 0;
+        width: 332px;
+        height: 73px;
+        font-size: 16px;
+    }
+
+    .slider--slides {
+        gap: 30px;
+    }
+
+    .slides--content div {
+        width: 332px;
+        height: max-content;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: start;
+        margin: 0 auto;
+        padding: 20px 47px;
+    }
+
+    .slides--content div p,
+    .slides--content div p:nth-child(2) {
+        width: 238px;
+    }
+
+    .slides--content div p:nth-child(3) {
+        width: 184px;
+    }
+
+    .slides--content:nth-child(2) div p:nth-child(3) {
+        width: 203px;
+    }
+
+    .slides--content:nth-child(3) div p:nth-child(3) {
+        width: 250px;
+    }
+
+    .slides--content:nth-child(4) div p:nth-child(3) {
+        width: 230px;
+    }
+
+    .slides--content:nth-child(5) h3 {
+        line-height: 28px;
+        width: 332px;
+    }
+
+    .slides--content:nth-child(5) {
+        padding: 38px 20px 70px;
+    }
 }
