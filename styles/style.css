@@ -1375,4 +1375,13 @@ a {
     .slides--content:nth-child(5) {
         padding: 38px 20px 70px;
     }
+    .organizers--items,
+    .supports--items {
+        display: flex;
+        margin-top: 100px;
+        width: 970px;
+        flex-wrap: wrap;
+        gap: 60px;
+        flex-direction: row;
+    }
 }
