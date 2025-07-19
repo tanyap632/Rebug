@@ -1274,8 +1274,6 @@ a {
     /* header */
     .header {
         justify-content: space-between;
-        width: 100vw;
-        z-index: 999;
         background: #fff;
     }
 
@@ -1299,7 +1297,7 @@ a {
 
 
     .first-block {
-        margin-top: -105px;
+        margin-top: -135px;
     }
 
     .first-block--text {
