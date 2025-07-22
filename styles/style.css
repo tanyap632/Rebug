@@ -1280,8 +1280,7 @@ a {
     }
 
 
-     .header--nav,
-    .header--nav_mobile {
+    .header--nav {
         display: none;
     }
 
@@ -1289,11 +1288,14 @@ a {
         display: block;
     }
 
-    .header--mobile_open {
-        display: block;
-        background: #fff;
+    .header--nav_mobile {
+        display: none;
     }
 
+    .header--mobile_open {
+        display: block;
+        background-color: #FFF;
+    }
     .first-block {
         margin-top: -135px;
     }
