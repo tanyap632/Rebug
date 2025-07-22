@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     openMenuBtn.addEventListener('click', function() {
+         console.log('Кнопка нажата!');
         mobileMenu.classList.add('menu-open');
         document.body.style.overflow = "hidden";
     });
