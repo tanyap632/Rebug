@@ -1295,6 +1295,7 @@ a {
     .header--mobile_open {
         display: block;
         background-color: #FFF;
+        z-index: 999;
     }
     .first-block {
         margin-top: -135px;
