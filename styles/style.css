@@ -1278,7 +1278,7 @@ a {
     }
 
 
-    .header--nav {
+   .header--nav {
         display: none;
     }
 
@@ -1286,11 +1286,14 @@ a {
         display: block;
     }
 
+    .header--nav_mobile {
+        display: none;
+    }
+
     .header--mobile_open {
         display: block;
         background-color: #FFF;
     }
-
 
     .first-block {
         margin-top: -135px;
