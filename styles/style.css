@@ -1274,11 +1274,14 @@ a {
     /* header */
     .header {
         justify-content: space-between;
+        width: 100vw;
+        z-index: 999;
         background: #fff;
     }
 
 
-   .header--nav {
+     .header--nav,
+    .header--nav_mobile {
         display: none;
     }
 
@@ -1286,13 +1289,9 @@ a {
         display: block;
     }
 
-    .header--nav_mobile {
-        display: none;
-    }
-
     .header--mobile_open {
         display: block;
-        background-color: #FFF;
+        background: #fff;
     }
 
     .first-block {
