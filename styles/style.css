@@ -1313,6 +1313,18 @@ a {
         display: none;
     }
 
+/*     about */
+.about{
+    flex-direction: column;
+    height: auto;
+}
+    .about p{
+    margin-top: 50px;
+    }
+    pistol{
+        display:none;}
+    .programs--text{
+        flex-direction: column-reverse;}
     /* slider */
     .slider,
     .slides--content,
