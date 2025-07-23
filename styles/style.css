@@ -1321,7 +1321,7 @@ a {
     .about p{
     margin-top: 50px;
     }
-    pistol{
+    .pistol{
         display:none;}
     .programs--text{
         flex-direction: column-reverse;}
