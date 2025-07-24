@@ -33,7 +33,16 @@ function showSlide(index) {
   slides.style.transform = \translateX(-${currentSlide * 505}px)\;
   updateDots();
 }
-
+if(window.innerWidth >= 768 && window.innerWidth <= 1023){
+  slides.addEventListener('scroll', function(){
+    // Определить активный слайд по scrollLeft
+    const slideWidth = images[0].offsetWidth + 30; // 332 + gap
+    const scrollPosition = slides.scrollLeft;
+    const index = Math.round(scrollPosition / slideWidth);
+    currentSlide = index;
+    updateDots();
+  });
+}
 // Следим за изменением размера окна
 window.addEventListener('resize', enableSwipeOnTablet);
 // Инициализируем при загрузке
