@@ -1308,6 +1308,8 @@ a {
 
     .first-block--text {
         margin-top: 235px;
+        max-width: 1023px;
+        width: max-content;
     }
 
     .first-block--text h1 {
@@ -1410,11 +1412,8 @@ a {
     padding-bottom: 10px;
     /* Снимаем transition, управляем прокруткой ползунком/свайпом */
     transition: none !important;
-    /* Ширина auto, т.к. flex, пусть сам решает */
-    width: auto;
     /* Отключаем transform — он не нужен с scrollable */
     transform: none !important;
-        padding-right: calc(100vw - 332px - 40px); /* 40px — ваш padding из .wrapper? поправьте! */
     }
 
     .slides--content div {
