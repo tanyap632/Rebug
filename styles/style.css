@@ -1274,7 +1274,6 @@ a {
     /* header */
     .header {
         justify-content: space-between;
-        width: 100vw;
         z-index: 999;
         background: #fff;
     }
@@ -1439,4 +1438,9 @@ a {
         gap: 60px;
         flex-direction: row;
     }
+
+/*     contacts */
+    .contacts--block {
+    flex-direction: column;
+}
 }
