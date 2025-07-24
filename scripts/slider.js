@@ -30,7 +30,7 @@ function showSlide(index) {
   else if (index >= images.length) currentSlide = 0;
   else currentSlide = index;
 
-  slides.style.transform = \translateX(-${currentSlide * 505}px)\;
+  slides.style.transform = `translateX(-${currentSlide * 505}px)`;
   updateDots();
 }
 if(window.innerWidth >= 768 && window.innerWidth <= 1023){
