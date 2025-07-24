@@ -1269,7 +1269,8 @@ a {
 
     .wrapper {
         max-width: 970px;
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /* header */
     .header {
@@ -1322,6 +1323,11 @@ a {
     }
     .pistol{
         display:none;}
+
+/*     programs */
+    .programs {
+    margin-top: 100px;
+}
     .programs--text{
         flex-direction: column-reverse;}
     /* slider */
@@ -1438,8 +1444,14 @@ a {
         gap: 60px;
         flex-direction: row;
     }
+    .organizers {
+    margin-top: 150px;
+}
 
 /*     contacts */
+    .contacts{
+        margin-top: 180px;
+    }
     .contacts--block {
     flex-direction: column;
 }
