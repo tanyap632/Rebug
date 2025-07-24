@@ -1297,6 +1297,11 @@ a {
         background-color: #FFF;
         z-index: 999;
     }
+
+    .header--mobile_close {
+    margin-right: 25px;}
+
+/*     first-block */
     .first-block {
         margin-top: -135px;
     }
