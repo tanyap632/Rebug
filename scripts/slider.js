@@ -21,7 +21,7 @@ function showSlide(index) {
   if (index < 0) currentSlide = images.length - 1;
   else if (index >= images.length) currentSlide = 0;
   else currentSlide = index;
-  slides.style.transform = \translateX(-${currentSlide * 505}px)\;
+  slides.style.transform = `translateX(-${currentSlide * 505}px)`;
   updateDots();
 }
 
