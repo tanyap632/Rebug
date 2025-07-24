@@ -1346,6 +1346,7 @@ a {
     }
 
     .slider {
+        width: 100vw;
         max-width: 100vw;
         text-align: center;
     }
@@ -1381,6 +1382,11 @@ a {
 
     .slides--content {
         padding: 38px 20px 32px;
+        scroll-snap-align: start;
+    flex: 0 0 auto;
+    /* ширина 332px — по вашему макету */
+    width: 332px !important;
+    max-width: 332px;
     }
 
     .slides--content h3 {
@@ -1397,6 +1403,18 @@ a {
 
     .slider--slides {
         gap: 30px;
+          overflow-x: auto;
+    display: flex;
+         scroll-snap-type: x mandatory; /* для фиксации на слайде */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    /* Снимаем transition, управляем прокруткой ползунком/свайпом */
+    transition: none !important;
+    /* Ширина auto, т.к. flex, пусть сам решает */
+    width: auto;
+    /* Отключаем transform — он не нужен с scrollable */
+    transform: none !important;
+        padding-right: calc(100vw - 332px - 40px); /* 40px — ваш padding из .wrapper? поправьте! */
     }
 
     .slides--content div {
