@@ -528,7 +528,9 @@ a {
     padding: 0 30px;
     z-index: 1000;
 }
-
+ .header--nav_mobile.menu-open {
+                overflow-y: overlay;
+    }
 .header--nav_mobile ul li a {
     font-family: 'PTSerif';
     font-size: 24px;
