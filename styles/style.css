@@ -605,6 +605,7 @@ a {
 
     .header--nav_mobile.menu-open {
         display: block;
+                overflow-y: overlay;
     }
 
     .header--nav_mobile {
