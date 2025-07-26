@@ -528,7 +528,9 @@ a {
     padding: 0 30px;
     z-index: 1000;
 }
-
+ .header--nav_mobile.menu-open {
+                overflow-y: overlay;
+    }
 .header--nav_mobile ul li a {
     font-family: 'PTSerif';
     font-size: 24px;
@@ -605,6 +607,7 @@ a {
 
     .header--nav_mobile.menu-open {
         display: block;
+                overflow-y: overlay;
     }
 
     .header--nav_mobile {
@@ -1269,11 +1272,13 @@ a {
 
     .wrapper {
         max-width: 970px;
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /* header */
     .header {
         justify-content: space-between;
+        z-index: 999;
         background: #fff;
     }
 
@@ -1286,18 +1291,28 @@ a {
         display: block;
     }
 
+    .header--nav_mobile {
+        display: none;
+    }
+
     .header--mobile_open {
         display: block;
         background-color: #FFF;
+        z-index: 999;
     }
 
+    .header--mobile_close {
+    margin-right: 25px;}
 
+/*     first-block */
     .first-block {
         margin-top: -135px;
     }
 
     .first-block--text {
         margin-top: 235px;
+        max-width: 1023px;
+        width: max-content;
     }
 
     .first-block--text h1 {
@@ -1308,6 +1323,23 @@ a {
         display: none;
     }
 
+/*     about */
+.about{
+    flex-direction: column;
+    height: auto;
+}
+    .about p{
+    margin-top: 50px;
+    }
+    .pistol{
+        display:none;}
+
+/*     programs */
+    .programs {
+    margin-top: 100px;
+}
+    .programs--text{
+        flex-direction: column-reverse;}
     /* slider */
     .slider,
     .slides--content,
@@ -1319,6 +1351,7 @@ a {
     }
 
     .slider {
+        width: 100vw;
         max-width: 100vw;
         text-align: center;
     }
@@ -1354,6 +1387,11 @@ a {
 
     .slides--content {
         padding: 38px 20px 32px;
+        scroll-snap-align: start;
+    flex: 0 0 auto;
+    /* ширина 332px — по вашему макету */
+    width: 332px !important;
+    max-width: 332px;
     }
 
     .slides--content h3 {
@@ -1370,6 +1408,15 @@ a {
 
     .slider--slides {
         gap: 30px;
+          overflow-x: auto;
+    display: flex;
+         scroll-snap-type: x mandatory; /* для фиксации на слайде */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    /* Снимаем transition, управляем прокруткой ползунком/свайпом */
+    transition: none !important;
+    /* Отключаем transform — он не нужен с scrollable */
+    transform: none !important;
     }
 
     .slides--content div {
@@ -1422,4 +1469,19 @@ a {
         gap: 60px;
         flex-direction: row;
     }
+    .organizers {
+    margin-top: 150px;
+}
+
+/*     contacts */
+    .contacts{
+        margin-top: 180px;
+    }
+    .contacts--map{
+        margin-top: 50px;
+    }
+    .contacts--block {
+        margin-top: 100px;
+    flex-direction: column;
+}
 }
