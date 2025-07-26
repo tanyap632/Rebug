@@ -6,31 +6,31 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('..media/fonts/Inter/Inter-Regular.ttf');
+    src: url('../media/fonts/Inter/Inter-Regular.ttf');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'PTSerif';
-    src: url('..media/fonts/PTSerif/PTSerif-Bold.ttf');
+    src: url('../media/fonts/PTSerif/PTSerif-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('..media/fonts/Roboto/Roboto-Medium.ttf');
+    src: url('../media/fonts/Roboto/Roboto-Medium.ttf');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('..media/fonts/Roboto/Roboto-Bold.ttf');
+    src: url('../media/fonts/Roboto/Roboto-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('..media/fonts/Roboto/Roboto-Black.ttf');
+    src: url('../media/fonts/Roboto/Roboto-Black.ttf');
     font-weight: 900;
 }
 
